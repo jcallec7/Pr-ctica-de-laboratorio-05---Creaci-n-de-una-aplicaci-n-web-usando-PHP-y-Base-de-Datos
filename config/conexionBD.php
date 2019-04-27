@@ -5,7 +5,7 @@
  $db_password = "root";
  $db_name = "hipermedial";
 
- $conn = new mysqli($db_servername, $db_username, $db_password, $db_name);
+ $conn = new mysqli($db_servername, $db_username, $db_password="", $db_name);
  $conn->set_charset("utf8");
 
  # Probar conexión
@@ -14,5 +14,5 @@
  }else{
  echo "<p>Conexión exitosa!! :)</p>";
  }
- 
+
 ?>
